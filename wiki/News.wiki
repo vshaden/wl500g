@@ -2,8 +2,8 @@
 #labels Featured
 
 ===Detailed revision history===
-  * [http://code.google.com/p/wl500g/source/list?path=/branches/d/ Firmware 1.9.2.7-d source changes]
-  * [http://code.google.com/p/wl500g/source/list?path=/trunk/ Firmware 1.9.2.7-rtn source changes]
+  * [https://github.com/wl500g/wl500g/commits/master Firmware 1.9.2.7-rtn source changes]
+  * [https://github.com/wl500g/wl500g/commits/d Firmware 1.9.2.7-d source changes]
 
 ===RT-N-1.9.2.7-rtn-`r5066` (2013-04-27)===
   * kernel
