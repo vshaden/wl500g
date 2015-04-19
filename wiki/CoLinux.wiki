@@ -187,7 +187,7 @@ Sample install.sh
 inst=`pwd -P`
 mkdir $inst/broadcom/src/linux -p
 mkdir /opt/brcm -p
-svn checkout http://wl500g.googlecode.com/svn/trunk/ $inst/broadcom/src/1.9.2.7-rtn
+git clone https://github.com/wl500g/wl500g.git $inst/broadcom/src/1.9.2.7-rtn
 tar -C /opt/brcm -jxvf hndtools-mipsel-uclibc-4.6.3-K26-r4755.tar.bz2
 ln -sf /opt/brcm/hndtools-mipsel-uclibc-4.6.3-K26 /opt/brcm/hndtools-mipsel-uclibc
 rm -rf $inst/broadcom/src/linux/linux-2.6

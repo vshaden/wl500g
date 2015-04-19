@@ -10,7 +10,7 @@
     * flex
     * bison
     * zlib development
-    * subversion
+    * git
 
 == 2. Скачать дополнительные инструменты и исходники ==
   * Toolchain (компилятор + библиотеки + утилиты) [http://code.google.com/p/wl500g/downloads/list?can=3&q=hndtools-mipsel-uclibc-4.6.4 hndtools-mipsel-uclibc-4.6.4]
@@ -29,7 +29,7 @@ ln -sf /whatever-you-want/broadcom/src/linux/linux-2.6.22.19 /whatever-you-want/
 }}}
   # Получение исходников прошивки
 {{{
-svn checkout http://wl500g.googlecode.com/svn/trunk/ /whatever-you-want/broadcom/src/1.9.2.7-rtn
+git clone https://github.com/wl500g/wl500g.git /whatever-you-want/broadcom/src/1.9.2.7-rtn
 }}}
 
 == 4. Сборка и компиляция ==
@@ -55,8 +55,8 @@ $ make install
 }}}
   # Файл прошивки и модули ядра искать в /whatever-you-want/broadcom/src/gateway/mipsel-uclibc/
 
-== 5. Обновление из SVN ==
-   * Если вы обновили дерево исходников из SVN, и хотите пересобрать только измененную часть, то алгоритм усложняется:
+== 5. Обновление из GIT ==
+   * Если вы обновили дерево исходников из GIT, и хотите пересобрать только измененную часть, то алгоритм усложняется:
      * Если обновились патчи к ядру, то необходимо
        * переразвернуть оригинальное ядро из архива (см. пункт 3.1)
        * перенакат патчей и обновление конфига

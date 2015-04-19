@@ -10,7 +10,7 @@
     * flex
     * bison
     * zlib development
-    * subversion
+    * git
 
 == 2. Download the additional tools/sources ==
   * Toolchain [http://code.google.com/p/wl500g/downloads/list?can=2&q=hndtools-mipsel-uclibc-4.3.5 hndtools-mipsel-uclibc-4.3.5]
@@ -29,7 +29,7 @@ ln -sf /whatever-you-want/broadcom/src/linux/linux-2.4.37.11 /whatever-you-want/
 }}}
   # Checking out firmware sources
 {{{
-svn checkout http://wl500g.googlecode.com/svn/branches/d/ /whatever-you-want/broadcom/src/1.9.2.7-d
+git clone -b d https://github.com/wl500g/wl500g.git /whatever-you-want/broadcom/src/1.9.2.7-d
 }}}
   # Add the path to the toolchain (it can be introduced to the personal ~/.profile for convenience)
 {{{
@@ -53,8 +53,8 @@ $ make install
 }}}
   # Firmware image and extra kernel modules resides under /whatever-you-want/broadcom/src/gateway/mipsel-uclibc/
 
-== 5. Sources update from SVN ==
-   * In case of you want to refresh sources SVN, and don't want to rebuild an all tree, update algorithm will be complicated:
+== 5. Sources update from GIT ==
+   * In case of you want to refresh sources GIT, and don't want to rebuild an all tree, update algorithm will be complicated:
      * If kernel patches updated/added, you should
        * unarchive entire kernel sources (see. paragraph 3.1)
        * reapply patches & refresh kernel config
